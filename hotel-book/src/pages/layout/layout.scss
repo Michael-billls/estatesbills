@@ -1,0 +1,35 @@
+@import "../../responsive.scss";
+
+
+.layout{
+ 
+    height: 1000vh;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    
+
+    @include lg{
+      
+        max-width: 1440px;
+    }
+
+
+    @include md{ 
+        max-width: 1024px;
+    }
+    
+    @include sm{ 
+        max-width: 640px;
+    }
+
+    .content{
+        height: calc(1000vh-100px);
+        //flex: 1;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../responsive.scss';
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+
+    
+    @include md{
+        width: 120%;
+        height: 120%;
+       margin-bottom: 150px;
+        
+    }
+}

@@ -1,0 +1,96 @@
+@import '../../responsive.scss';
+
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+   
+
+   
+
+    
+    h1{
+        font-weight: 300;
+        font-size: 24px;
+        
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+       
+
+       label{
+        font-size: 10px;
+       }
+        
+
+        input,select{
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    }
+
+    .top{
+          .item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            label{
+                font-size: 15px;
+                font-weight: 400;
+            }
+            input{
+                width: 100%;
+    
+            }
+            button{
+                width: 70px;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: #fece51;
+
+        
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+          }
+      
+
+      
+        
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+
+
+        @include sm{
+        
+           display:flex;
+           flex-direction:column;
+               
+           }
+
+        
+    }
+
+    
+}
+
+

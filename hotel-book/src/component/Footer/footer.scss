@@ -1,0 +1,114 @@
+@import '../../responsive.scss';
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+    color: rgb(87, 85, 85);
+    margin-bottom: 30px;
+    background-color: #fcf5f3;
+    padding: 15px;
+
+@include sm{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+    @include md{
+        margin-bottom: 180px;
+    }
+  
+  
+    .footer-box {
+      p {
+        font-size: 0.938rem;
+        margin-bottom: 10px;
+      }
+  
+      h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+  
+      .social {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+  
+        &:hover {
+          color: #fda702;
+        }
+  
+        a {
+          font-size: 24px;
+          color: #fda702;
+          padding: 10px;
+          background: #ebeff2;
+          border-radius: 0.5rem;
+        }
+  
+        &:hover {
+          background: var(--main-color);
+          color: var(--bg-color);
+        }
+      }
+  
+      h3 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .payment {
+        display: flex;
+        align-items: center;
+        column-gap: 00.5rem;
+  
+        img {
+          width: 44px;
+        }
+      }
+    }
+  
+    .footer-box2 {
+      h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        margin-left: 2px;
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+        font-weight: 100;
+        color: rgb(87, 85, 85);
+        
+  
+        &:hover {
+          color: #fda702;
+        }
+      }
+    }
+    .footer-box3 {
+      h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+        font-weight: 100;
+        color: rgb(87, 85, 85);
+  
+        &:hover {
+          color: #fda702;
+        }
+      }
+    }
+    .copyright {
+      padding: 20px;
+      text-align: center;
+      color: rgb(87, 85, 85);
+    }
+  }

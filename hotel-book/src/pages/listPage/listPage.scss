@@ -1,0 +1,53 @@
+@import "../../responsive.scss";
+
+.listPage{
+display: flex;
+height: 100%;
+padding-left: 10px;
+
+
+@include sm{
+    margin-bottom: 20px;
+}
+
+@include md{
+    margin-bottom: 150px;
+}
+
+
+
+@include md{
+       display: flex;
+    }
+
+
+
+.listContainer{
+   flex: 3;
+   height: 100%;
+
+
+   .wrapper{
+    height: 100%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+
+    
+   }
+}
+.mapContainer{
+        flex: 2;
+        height: 100vh;
+        width: 100vh;
+        margin-top: 50px;
+        margin-right: 20px;
+
+        @include sm{
+    display: none;
+            
+        }
+}
+}

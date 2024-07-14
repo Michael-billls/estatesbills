@@ -1,0 +1,114 @@
+@import "../../responsive.scss";
+.homePage {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+   url("/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 10px;
+  
+
+  @include md{
+    margin-bottom: 0;
+  }
+
+ 
+
+ 
+
+  .textContainer {
+    flex: 3;
+    height: 100vh;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      height: 100%;
+
+      p {
+        font-family: "Arsenal SC", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        color: #fcf5f3;
+      }
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 55px;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: floralwhite;
+        font-family: "Playfair Display", serif;
+
+        @include sm{
+          font-size: 35px;
+        }
+      }
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+
+        @include sm {
+          display: none;
+        }
+
+        h1 {
+          font-size: 36px;
+
+          @include lg {
+            font-size: 32px;
+          }
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 300;
+        }
+       .box{
+        h1{
+         color: white;
+         
+        }
+        h2{
+            color: black;
+           
+            font-weight: bold;
+        }
+       }
+      }
+    }
+  }
+  .imgContainer {
+    flex: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #fcf5f3;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+
+      @include lg {
+        width: 105%;
+      }
+    }
+  }
+}
